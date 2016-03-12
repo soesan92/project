@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+<link href="bootstrap/css/docs.css" rel="stylesheet" type="text/css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#myTooltip").tooltip({
+        title: "<h4><img src='./bootstrap/imgs/java.jpg' style='width:26px;' alt='Smiley'> Hello, <b>I'm</b> <i>Smiley!</i></h4>",
+        html: true,
+        jsp:true,
+    }); 
+});
+</script>
+</head>
+<body>
+<div class="span2">
+			<ul>
+				<li>
+					<a href="#" data-toggle="tooltip" id="myTooltip" data-placement="bottom">hover me</a>
+				</li>
+			</ul>
+		</div>
+		Hello
+</body>
+</html>
