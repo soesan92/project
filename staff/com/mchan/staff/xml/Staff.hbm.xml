@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.mchan.staff.domain">
+	<class name="Staff" table="STAFF">
+		<id name="id" type="long" column="STAFF_ID">
+			<generator class="increment" />
+		</id>
+		<property name="name" column="STAFF_NAME" type="string" />
+		<property name="email" column="EMAIL" type="string" />
+		<property name="phone" column="PH_NUM" type="string" />
+		<property name="department" column="DEPARTMENT" type="string" />
+		<property name="role" column="ROLE" type="string" />
+		<property name="entryDate" column="ENTRY_DATE" type="date" />
+		<property name="nrc_no" column="NRC_NO" type="string" />
+		<property name="description" column="DESCRIPTION" type="string" />
+		<property name="password" column="PASSWORD" type="string" />
+		<property name="createDate" column="CREATE_DATE" type="string" />
+		<property name="updateDate" column="UPD_DATE" type="string" />
+	</class>
+</hibernate-mapping>
